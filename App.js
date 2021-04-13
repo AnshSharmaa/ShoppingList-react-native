@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, FlatList } from 'react-native';
+import { View, Text, StyleSheet, FlatList, Alert } from 'react-native';
 import Header from './components/Header';
 import ListItem from './components/ListItems';
-
+import AddItem from './components/AddItem';
 
 const App = () => {
 
@@ -31,9 +31,21 @@ const App = () => {
     });
   }
 
+  const addItem = (text) => {
+    if (!text) {
+      Alert.alert("Error", "Item name cannot be empty", [{ text: "Ok", },],);
+    } else {
+      setItems(prevItems => {
+        //here text is equal to typing text:text
+        return [{ id: Math.random(), text }, ...prevItems];
+      });
+    }
+  }
+
   return (
     <View style={styles.container}>
       <Header title='Shopping List' />
+      <AddItem addItem={addItem} />
       <FlatList data={items} renderItem={({ item }) => <ListItem item={item} deleteItem={deleteItem} />} />
     </View>
   )
