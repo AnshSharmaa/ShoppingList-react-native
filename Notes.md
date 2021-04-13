@@ -11,7 +11,7 @@ A React component for displaying text.
 
 Text supports nesting, styling, and touch handling.
 
-
+# [Flatlist](https://reactnative.dev/docs/flatlist)
 # Facts
 anything you can do with react dom can be done with native
 # Thoughts
