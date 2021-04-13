@@ -12,5 +12,7 @@ A React component for displaying text.
 Text supports nesting, styling, and touch handling.
 
 
+# Facts
+anything you can do with react dom can be done with native
 # Thoughts
 it kinda bugs me that we can't give dimensions like 10px to something it's just 10 [read this](https://reactnative.dev/docs/height-and-width)  but its way better and we shouldn't [use px anyway](https://css-tricks.com/is-it-better-to-use-ems-rems-than-px-for-font-size/)  
