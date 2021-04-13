@@ -1,7 +1,3 @@
-run emulator outside andy 
-```sh
-cd S:\SDKTools\emulator
-./emulator -avd Pixel_4_API_29
-```
-for app start
-```react-native run-android```
+My first app in react native
+
+This app uses function components and therefore by extension hooks
